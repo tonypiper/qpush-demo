@@ -67,3 +67,17 @@ swiftmailer:
     username:  "%mailer_user%"
     password:  "%mailer_password%"
     spool:     { type: memory }
+
+uecode_qpush:
+    providers:
+        ironmq:
+            token:      %ironmq_token%
+            project_id: %ironmq_project_id%
+    queues:
+        queue1:
+            provider: ironmq #or aws
+            options:
+                queue_name: queue1 #optional. the queue name used on the provider
+                push_notifications: true
+                subscribers:
+                    - { endpoint: %ironmq_endpoint1_url%, protocol: http }
