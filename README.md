@@ -29,7 +29,7 @@ eg.
 
     ironmq_endpoint1_url: http://<something>.ngrok.com
 
-8. all being well, you can run app/console app:demo1. This will post 10 messages to IronMQ.
+8. all being well, you can run `app/console app:demo1`. This will post 10 messages to IronMQ.
 
 If you examine app/logs/dev.log (try `tail -f dev.log | grep --line-buffered app.INFO`) you'll see the messages being
 posted, and then the inbound messages being processed by src/Inviqa/Bundle/QPushDemoBundle/Service/Queue1Service.php.
