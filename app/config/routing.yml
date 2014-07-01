@@ -1,0 +1,5 @@
+inviqa_q_push_demo:
+    resource: "@InviqaQPushDemoBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
