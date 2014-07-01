@@ -31,9 +31,10 @@ eg.
 
 8. all being well, you can run app/console app:demo1. This will post 10 messages to IronMQ.
 
-If you examine app/logs/dev.log you'll see the messages being posted, and then the inbound messages being processed by
-src/Inviqa/Bundle/QPushDemoBundle/Service/Queue1Service.php. The implementation simulates random failures, and you
-should see that IronMQ retries. Ultimately it will give up.
+If you examine app/logs/dev.log (try `tail -f dev.log | grep --line-buffered app.INFO`) you'll see the messages being
+posted, and then the inbound messages being processed by src/Inviqa/Bundle/QPushDemoBundle/Service/Queue1Service.php.
+
+The implementation simulates random failures, and you should see that IronMQ retries. Ultimately it will give up.
 
 IronMQ by default gives a job 60 seconds to complete. After that it'll be put back on the queue.
 
