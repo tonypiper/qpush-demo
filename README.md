@@ -25,7 +25,9 @@ e.g.
 6. start ngrok in a new terminal window - `ngrok 8000`
 7. paste the nrgok url into app/config/parameters.yml
 
-eg.     ironmq_endpoint1_url: http://<something>.ngrok.com
+eg.
+
+    ironmq_endpoint1_url: http://<something>.ngrok.com
 
 8. all being well, you can run app/console app:demo1. This will post 10 messages to IronMQ.
 
