@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "0f5bf28fac35560dbdb2e597d32df056",
+    "hash": "8bc0852231b60a19486be20da233fab0",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -679,6 +679,100 @@
                 "parameters management"
             ],
             "time": "2013-12-07 10:10:39"
+        },
+        {
+            "name": "iron-io/iron_core",
+            "version": "0.1.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/iron-io/iron_core_php.git",
+                "reference": "209b9e65279643f9716b918a6b5168141d548593"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/iron-io/iron_core_php/zipball/209b9e65279643f9716b918a6b5168141d548593",
+                "reference": "209b9e65279643f9716b918a6b5168141d548593",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.2.0"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "IronCore.class.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Alexander S",
+                    "email": "alexander@iron.io",
+                    "homepage": "http://iron.io",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Iron.io",
+                    "email": "support@iron.io",
+                    "homepage": "http://iron.io",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Collection of common functions for all iron.io client libraries",
+            "homepage": "http://github.com/iron-io/iron_core_php",
+            "keywords": [
+                "iron",
+                "iron_core"
+            ],
+            "time": "2013-09-17 03:47:38"
+        },
+        {
+            "name": "iron-io/iron_mq",
+            "version": "1.5.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/iron-io/iron_mq_php.git",
+                "reference": "82dde27337801a914a5ac88cd5f1ba7739f85f19"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/iron-io/iron_mq_php/zipball/82dde27337801a914a5ac88cd5f1ba7739f85f19",
+                "reference": "82dde27337801a914a5ac88cd5f1ba7739f85f19",
+                "shasum": ""
+            },
+            "require": {
+                "iron-io/iron_core": "*",
+                "php": ">=5.2.0"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "IronMQ.class.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Alexander S",
+                    "email": "alexander@iron.io",
+                    "homepage": "http://iron.io",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Client binding for IronMQ (hosted message queue)",
+            "homepage": "http://github.com/iron-io/iron_mq_php",
+            "keywords": [
+                "MQ",
+                "iron",
+                "iron_mq"
+            ],
+            "time": "2014-02-19 14:02:39"
         },
         {
             "name": "jdorn/sql-formatter",
@@ -1527,6 +1621,67 @@
                 "templating"
             ],
             "time": "2014-02-13 10:19:29"
+        },
+        {
+            "name": "uecode/qpush-bundle",
+            "version": "1.2.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/uecode/qpush-bundle.git",
+                "reference": "97c28b29c2a4feeef2bf73bd296824b45619ae95"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/uecode/qpush-bundle/zipball/97c28b29c2a4feeef2bf73bd296824b45619ae95",
+                "reference": "97c28b29c2a4feeef2bf73bd296824b45619ae95",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/common": "~2.4",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "aws/aws-sdk-php": "~2.5",
+                "iron-io/iron_mq": "~1.5",
+                "phpunit/phpunit": "~3.7",
+                "symfony/monolog-bundle": "~2.3",
+                "symfony/symfony": "~2.3"
+            },
+            "suggest": {
+                "aws/aws-sdk-php": "Required to use AWS as a Queue Provider",
+                "iron-io/iron_mq": "Required to use IronMQ as a Queue Provider"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Uecode\\Bundle\\QPushBundle\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache 2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Keith Kirk",
+                    "email": "kkirk@undergroundelephant.com",
+                    "homepage": "http://undergroundelephant.com",
+                    "role": "developer"
+                }
+            ],
+            "description": "Asynchronous processing for Symfony using Push Queues",
+            "homepage": "https://github.com/uecode/qpush-bundle",
+            "keywords": [
+                "asynch",
+                "aws",
+                "bundle",
+                "iron mq",
+                "pub-sub",
+                "push",
+                "qpush",
+                "symfony"
+            ],
+            "time": "2014-06-30 15:21:38"
         }
     ],
     "packages-dev": [
